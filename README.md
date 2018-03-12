@@ -1,1 +1,2 @@
 # PycharmProjects
+这个文件夹是平时用来做Python小作业的
