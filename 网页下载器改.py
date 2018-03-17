@@ -1,7 +1,8 @@
 #coding:utf-8
 import urllib2
 print('下载哪个网页？\n')
-target = raw_input()
+
+target = raw_input('http://www.')
 web = urllib2.urlopen('http://www.%s'%target,'w')
 content = web.read()
 
