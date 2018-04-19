@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba3c692-dbd9-48b9-9ed8-352b61de419d" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/4.19.py" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/4.19.py" afterPath="$PROJECT_DIR$/4.19.py" />
+      <change beforePath="$PROJECT_DIR$/Battleship Symbiotic Hime v.0.2.py" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/Battleship Symbiotic Hime v.0.2.py" afterPath="$PROJECT_DIR$/Battleship Symbiotic Hime v.0.3.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,21 +26,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Battleship Symbiotic Hime v.0.2.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Battleship Symbiotic Hime v.0.2.py">
+      <file leaf-file-name="Battleship Symbiotic Hime v.0.3.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Battleship Symbiotic Hime v.0.3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="741">
-              <caret line="50" column="4" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
+            <state relative-caret-position="3192">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="4.19.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="4.19.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/4.19.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+            <state relative-caret-position="285">
+              <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -71,7 +72,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/网页下载器改.py" />
         <option value="$PROJECT_DIR$/3.17.py" />
         <option value="$PROJECT_DIR$/txt文件比一比.py" />
         <option value="$PROJECT_DIR$/3.18.py" />
@@ -120,8 +120,9 @@
         <option value="$PROJECT_DIR$/4.18.py" />
         <option value="$PROJECT_DIR$/4.17.py" />
         <option value="$PROJECT_DIR$/Battleship Symbiotic Hime v.0.1.py" />
-        <option value="$PROJECT_DIR$/Battleship Symbiotic Hime v.0.2.py" />
         <option value="$PROJECT_DIR$/4.19.py" />
+        <option value="$PROJECT_DIR$/Battleship Symbiotic Hime v.0.2.py" />
+        <option value="$PROJECT_DIR$/Battleship Symbiotic Hime v.0.3.py" />
       </list>
     </option>
   </component>
@@ -198,7 +199,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.4.19">
+  <component name="RunManager" selected="Python.Battleship Symbiotic Hime v.0.2">
     <configuration name="3.22" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -230,24 +231,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PycharmProjects" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/3.25.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="4.15" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PycharmProjects" />
-      <option name="SCRIPT_NAME" value="C:\Users\Dentioner Tchang\PycharmProjects\弱智列表编辑器.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -355,26 +338,44 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PycharmProjects" />
-      <option name="SCRIPT_NAME" value="C:\Users\Dentioner Tchang\PycharmProjects\Battleship Symbiotic Hime v.0.2.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dentioner Tchang\PycharmProjects\Battleship Symbiotic Hime v.0.3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
+    <configuration name="Battleship Symbiotic Hime v.0.2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PycharmProjects" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dentioner Tchang\PycharmProjects\Battleship Symbiotic Hime v.0.3.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.4.15" />
-      <item index="1" class="java.lang.String" itemvalue="Python.4.16" />
-      <item index="2" class="java.lang.String" itemvalue="Python.Battleship Symbiotic Hime v.0.1" />
-      <item index="3" class="java.lang.String" itemvalue="Python.4.17" />
-      <item index="4" class="java.lang.String" itemvalue="Python.4.19" />
+      <item index="0" class="java.lang.String" itemvalue="Python.4.16" />
+      <item index="1" class="java.lang.String" itemvalue="Python.Battleship Symbiotic Hime v.0.1" />
+      <item index="2" class="java.lang.String" itemvalue="Python.4.17" />
+      <item index="3" class="java.lang.String" itemvalue="Python.4.19" />
+      <item index="4" class="java.lang.String" itemvalue="Python.Battleship Symbiotic Hime v.0.2" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.4.19" />
-        <item index="1" class="java.lang.String" itemvalue="Python.Battleship Symbiotic Hime v.0.1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.4.17" />
-        <item index="3" class="java.lang.String" itemvalue="Python.4.16" />
-        <item index="4" class="java.lang.String" itemvalue="Python.4.15" />
+        <item index="0" class="java.lang.String" itemvalue="Python.Battleship Symbiotic Hime v.0.2" />
+        <item index="1" class="java.lang.String" itemvalue="Python.4.19" />
+        <item index="2" class="java.lang.String" itemvalue="Python.Battleship Symbiotic Hime v.0.1" />
+        <item index="3" class="java.lang.String" itemvalue="Python.4.17" />
+        <item index="4" class="java.lang.String" itemvalue="Python.4.16" />
       </list>
     </recent_temporary>
   </component>
@@ -752,14 +753,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Battleship Symbiotic Hime v.0.2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="741">
-          <caret line="50" column="4" lean-forward="false" selection-start-line="50" selection-start-column="4" selection-end-line="50" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/4.16.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="684">
@@ -778,8 +771,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/4.19.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="8" column="58" lean-forward="false" selection-start-line="8" selection-start-column="58" selection-end-line="8" selection-end-column="58" />
+        <state relative-caret-position="285">
+          <caret line="5" column="34" lean-forward="true" selection-start-line="5" selection-start-column="34" selection-end-line="5" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Battleship Symbiotic Hime v.0.3.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3192">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
           <folding />
         </state>
       </provider>

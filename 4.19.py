@@ -6,8 +6,8 @@ class ball:
         self.direction = direction
 
     def __str__(self):
-        msg = 'hi, I am a '+ self.size+' '+ self.color+ ' ball!'
-        return  msg
+        msg = 'hi, I am a ' + self.size+' ' + self.color + ' ball!'
+        return msg
 
     def bounce(self):
         if self.direction == 'down':
