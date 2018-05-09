@@ -30,3 +30,25 @@ class PokerCards:
 
         else:
             print 'error'
+
+        if self.flower == 1:
+            self.symbol = '♠'
+
+        elif self.flower == 2:
+            self.symbol = '♥'
+
+        elif self.flower == 3:
+            self.symbol = '♣'
+
+        elif self.flower == 4:
+            self.symbol = '♦'
+
+        else:
+            self.symbol = 'error'
+
+        self.ShortName = self.number[0] + self.symbol[0]
+
+        if self.number == '10':
+            self.ShortName = self.number + self.symbol[0]
+
+        self.LongName = self.number + 'of' + self.symbol

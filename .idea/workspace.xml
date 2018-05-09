@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba3c692-dbd9-48b9-9ed8-352b61de419d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/5.8.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/5.9.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/弱智扑克（未完成）.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/弱智扑克（未完成）.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,8 +20,8 @@
       <file leaf-file-name="Battleship Symbiotic Hime v.0.3.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Battleship Symbiotic Hime v.0.3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+            <state relative-caret-position="168">
+              <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -27,7 +29,7 @@
       <file leaf-file-name="5.5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/5.5.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
+            <state relative-caret-position="196">
               <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding>
                 <element signature="e#16#29#0" expanded="true" />
@@ -54,13 +56,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="5.8.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/5.8.py">
+      <file leaf-file-name="cards.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cards.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
-              <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+            <state relative-caret-position="39">
+              <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5.9.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5.9.py">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -79,8 +86,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/3.28.py" />
-        <option value="$PROJECT_DIR$/3.29.py" />
         <option value="$PROJECT_DIR$/3.30对比.py" />
         <option value="$PROJECT_DIR$/3.30.py" />
         <option value="$PROJECT_DIR$/3.30改.py" />
@@ -130,6 +135,8 @@
         <option value="$PROJECT_DIR$/5.6.py" />
         <option value="$PROJECT_DIR$/5.7.py" />
         <option value="$PROJECT_DIR$/5.8.py" />
+        <option value="$PROJECT_DIR$/5.9.py" />
+        <option value="$PROJECT_DIR$/弱智扑克（未完成）.py" />
       </list>
     </option>
   </component>
@@ -196,7 +203,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.5.8">
+  <component name="RunManager" selected="Python.弱智扑克（未完成）">
+    <configuration name="弱智扑克（未完成）" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dentioner Tchang\PycharmProjects\cards.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="3.22" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -269,24 +294,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="5.4" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PycharmProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/5.4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <configuration name="5.5" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -353,31 +360,31 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="C:\Users\Dentioner Tchang\PycharmProjects\弱智扑克（未完成）.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\Dentioner Tchang\PycharmProjects\cards.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.5.4" />
       <item itemvalue="Python.5.5" />
       <item itemvalue="Python.5.6" />
       <item itemvalue="Python.5.7" />
       <item itemvalue="Python.5.8" />
+      <item itemvalue="Python.弱智扑克（未完成）" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.弱智扑克（未完成）" />
         <item itemvalue="Python.5.8" />
         <item itemvalue="Python.5.7" />
         <item itemvalue="Python.5.6" />
         <item itemvalue="Python.5.5" />
-        <item itemvalue="Python.5.4" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Dentioner Tchang\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
     <frame x="-5" y="0" width="695" height="878" extended-state="0" />
@@ -406,22 +413,15 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/3.24.py</url>
           <line>1</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="24" />
+      <option name="time" value="25" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/3.31.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/3.31_hw.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="456">
@@ -753,7 +753,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/5.5.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
+        <state relative-caret-position="196">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
           <folding>
             <element signature="e#16#29#0" expanded="true" />
@@ -763,15 +763,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Battleship Symbiotic Hime v.0.3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="6" column="36" lean-forward="true" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
+        <state relative-caret-position="168">
+          <caret line="6" column="36" selection-start-line="6" selection-start-column="36" selection-end-line="6" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5.8.py">
+    <entry file="file://$PROJECT_DIR$/5.9.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cards.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
+        <state relative-caret-position="39">
+          <caret line="44" lean-forward="true" selection-start-line="44" selection-end-line="44" />
         </state>
       </provider>
     </entry>
