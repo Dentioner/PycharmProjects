@@ -33,23 +33,23 @@ class PokerCards:
             self.suit = -1
 
         if self.suit_id == 1:
-            self.suit = 'heitao'
+            self.suit = '♠'
 
         elif self.suit_id == 2:
-            self.suit = 'hongtao'
+            self.suit = '♥'
 
         elif self.suit_id == 3:
-            self.suit = 'meihua'
+            self.suit = '♣'
 
         elif self.suit_id == 4:
-            self.suit = 'fangpian'
+            self.suit = '♦'
 
         else:
             self.suit = 'error'
 
-        self.ShortName = self.rank[0] + self.suit[0]
+        self.ShortName = self.rank[0] + self.suit
 
         if self.rank == '10':
-            self.ShortName = self.rank + self.suit[0]
+            self.ShortName = self.rank + self.suit
 
-        self.LongName = self.rank + 'of' + self.suit
+        self.LongName = self.rank + ' of ' + self.suit
