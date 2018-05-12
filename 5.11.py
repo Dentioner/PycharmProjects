@@ -17,4 +17,6 @@ for cards in range(5):
 
 for ThisIsCard in hand:
     print ThisIsCard.ShortName
-    print ThisIsCard
+
+WhatIsPoker = PokerCards()
+print WhatIsPoker
