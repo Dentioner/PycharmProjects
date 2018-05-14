@@ -18,5 +18,4 @@ for cards in range(5):
 for ThisIsCard in hand:
     print ThisIsCard.ShortName
 
-WhatIsPoker = PokerCards()
-print WhatIsPoker
+

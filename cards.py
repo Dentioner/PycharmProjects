@@ -1,9 +1,9 @@
 # coding: utf-8
 class PokerCards:
-    def __init__(self, flower, num, string):
+    def __init__(self, flower, num):
         self.flower = flower
         self.num = num
-        self.string = string
+
 # flower 是花色1,2,3,4，num是点数, value 是对应的分值
 # symbol 是♠这些东西
 # number是 A J K Q这些
@@ -52,7 +52,7 @@ class PokerCards:
         if self.number == '10':
             self.ShortName = self.number + self.symbol
 
-        self.LongName = self.number + 'of' + self.symbol
+        self.LongName = self.number + ' of ' + self.symbol
 
     # def __str__(self, flower, num, string):
     #     test = 'guna'
