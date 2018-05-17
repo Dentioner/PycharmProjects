@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba3c692-dbd9-48b9-9ed8-352b61de419d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/Crazy Eights block3.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Crazy Eights block4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/5.14.py" beforeDir="false" afterPath="$PROJECT_DIR$/5.14.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Crazy Eights block3.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crazy Eights block3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试.py" beforeDir="false" afterPath="$PROJECT_DIR$/测试.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,15 +21,10 @@
       <file leaf-file-name="cards.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cards.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
+            <state relative-caret-position="-504">
               <caret selection-end-column="15" />
             </state>
           </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Crazy Eights main program.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Crazy Eights main program.py">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file leaf-file-name="Crazy Eights block1.py" pinned="false" current-in-tab="false">
@@ -50,23 +48,8 @@
       <file leaf-file-name="Crazy Eights block3.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crazy Eights block3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="728">
-              <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-              <folding>
-                <element signature="e#16#44#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="5.14.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/5.14.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-              <folding>
-                <element signature="e#16#29#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="163">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -74,6 +57,27 @@
       <file leaf-file-name="测试.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/测试.py">
           <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="Crazy Eights block4.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Crazy Eights block4.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="28">
+              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="5.14.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/5.14.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="350">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="e#16#29#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -92,7 +96,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/4.8.py" />
         <option value="$PROJECT_DIR$/4.8-re.py" />
         <option value="$PROJECT_DIR$/4.9.py" />
         <option value="$PROJECT_DIR$/弱智倒数计时器.py" />
@@ -136,12 +139,13 @@
         <option value="$PROJECT_DIR$/5.12.py" />
         <option value="$PROJECT_DIR$/5.11.py" />
         <option value="$PROJECT_DIR$/cards.py" />
-        <option value="$PROJECT_DIR$/5.14.py" />
         <option value="$PROJECT_DIR$/Crazy Eight v.01.py" />
         <option value="$PROJECT_DIR$/Crazy Eights main program.py" />
-        <option value="$PROJECT_DIR$/测试.py" />
         <option value="$PROJECT_DIR$/Crazy Eights block1.py" />
         <option value="$PROJECT_DIR$/Crazy Eights block2.py" />
+        <option value="$PROJECT_DIR$/Crazy Eights block4.py" />
+        <option value="$PROJECT_DIR$/5.14.py" />
+        <option value="$PROJECT_DIR$/测试.py" />
         <option value="$PROJECT_DIR$/Crazy Eights block3.py" />
       </list>
     </option>
@@ -209,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.Crazy Eights block2">
+  <component name="RunManager" selected="Python.测试">
     <configuration name="测试" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -381,11 +385,11 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.测试" />
+        <item itemvalue="Python.5.14" />
         <item itemvalue="Python.Crazy Eights block2" />
         <item itemvalue="Python.Crazy Eights block1" />
-        <item itemvalue="Python.测试" />
         <item itemvalue="Python.Battleship Symbiotic Hime v.0.3" />
-        <item itemvalue="Python.5.14" />
       </list>
     </recent_temporary>
   </component>
@@ -399,13 +403,13 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.1591078" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.3297194" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.3056266" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39974537" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3056266" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39974537" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -424,7 +428,7 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="26" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -743,18 +747,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/测试.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/cards.py">
+    <entry file="file://$PROJECT_DIR$/5.14.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-column="15" />
+        <state relative-caret-position="350">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+          <folding>
+            <element signature="e#16#29#0" expanded="true" />
+          </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crazy Eights main program.py">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/Crazy Eights block2.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -763,23 +764,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/5.14.py">
+    <entry file="file://$PROJECT_DIR$/cards.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="17" column="57" selection-start-line="17" selection-start-column="57" selection-end-line="17" selection-end-column="57" />
-          <folding>
-            <element signature="e#16#29#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="-504">
+          <caret selection-end-column="15" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Crazy Eights block4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28">
+          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Crazy Eights block3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="728">
-          <caret line="26" lean-forward="true" selection-start-line="26" selection-end-line="26" />
-          <folding>
-            <element signature="e#16#44#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="163">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
         </state>
       </provider>
     </entry>

@@ -14,5 +14,7 @@ for i in range(5):
     deck.remove(card)
 
 print
+# for c in hand:
+#     print c.ShortName, '=', c.LongName, 'value:', c.value
 for c in hand:
-    print c.ShortName, '=', c.LongName, 'value:', c.value
+    print c.symbol
