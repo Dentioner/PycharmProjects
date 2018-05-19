@@ -24,26 +24,28 @@ if up_card.number == 8:
 
 
 # 下面的出牌代码块很可能会被block4里面的代码替代
-chosen_number = raw_input('准备出哪张？1,2,3,4,5?不出而要抽牌的话，请输入0')
-chosen_number = int(chosen_number)
-if chosen_number == 0:  # 这表示抽牌的程序
-    if len(deck) > 0:
-        new_card = random.choice(deck)
-        print '你抽了'+ new_card.ShortName
-        hand.append(new_card)
-        deck.remove(new_card)
 
+while not valid_play:
+    chosen_number = raw_input('准备出哪张？1,2,3,4,5?不出而要抽牌的话，请输入0')
+    chosen_number = int(chosen_number)
+    if chosen_number == 0:  # 这表示抽牌的程序
+        if len(deck) > 0:
+            new_card = random.choice(deck)
+            print '你抽了'+ new_card.ShortName
+            hand.append(new_card)
+            deck.remove(new_card)
+
+        else:
+            print '牌组已空'
+            blocked += 1  # 这一个if块 是为了检测是否还有牌可以抽，否则就判定为一方玩家无法行动了
+        # break
+        # return
     else:
-        print '牌组已空'
-        blocked += 1  # 这一个if块 是为了检测是否还有牌可以抽，否则就判定为一方玩家无法行动了
-
-else:
-    while not valid_play:
         chosen_number -= 1
         chosen_card = hand[chosen_number]
         if chosen_card.number == 8:
             valid_play = True
-
+        # block5里面有一个函数会替代这个选花色的内容
             flower_choice = raw_input('请选择你想要的花色，按照顺序为♠，♥，♣，♦，输入1,2,3,4')
             flower_choice = int(flower_choice) -1
             active_symbol = flower_database[flower_choice]
@@ -52,13 +54,19 @@ else:
 
 
         elif chosen_card.symbol == active_symbol:
-            #  这里判断标准是否应该再加上一条“出相同点数而不是相同花色”的判断？
+
             valid_play = True
             active_symbol = chosen_card.symbol  # active_card 用来表示出的牌的花色
 
-    hand.remove(chosen_card)
-    up_card = chosen_card  # up_card 是明牌，展示自己出的牌来作为对方将要参考的牌
-    print '你出了' + up_card.ShortName
+        elif chosen_card.number == up_card.number:
+            valid_play = True
+
+        if not valid_play:
+            print '不是合法的出牌'
+
+hand.remove(chosen_card)
+up_card = chosen_card  # up_card 是明牌，展示自己出的牌来作为对方将要参考的牌
+print '你出了' + up_card.ShortName
 
 # active_symbol = chosen_card.symbol  # active_card 用来表示出的牌的花色
 

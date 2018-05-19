@@ -37,4 +37,8 @@ while not valid_play :
         is_eight = True
     elif selected_card.symbol == active_symbol: # 判断出牌是否合法
         valid_play = True
+    elif selected_card.number == up_card.number:
+        valid_play = True
 
+    if not valid_play:
+        response = raw_input('try again')

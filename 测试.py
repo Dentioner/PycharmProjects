@@ -1,3 +1,6 @@
 # coding: utf-8
-print 'a'
-print '\nascsacascasdasf'
+try:
+    a = int(raw_input())
+
+except:
+    print 'fuck'
