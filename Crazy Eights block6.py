@@ -1,4 +1,6 @@
 # coding: utf-8
+# 已经录入
+
 def computer_turn():
     import random
     global c_hand, active_symbol, up_card, deck, block

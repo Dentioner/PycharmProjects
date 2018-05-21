@@ -14,6 +14,7 @@ for i in range(5):
     hand.append(card)
     deck.remove(card)
 # 以上为抽排, 定义都是暂时的，下面的代码块才是重要的
+# 以下内容将会被block7替代
 # 以下为向玩家展示手牌
 print '\n现在你的手牌如下所示：'
 for ShouPai in hand:

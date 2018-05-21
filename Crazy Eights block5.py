@@ -1,4 +1,6 @@
 # coding: utf-8
+# 已经录入
+
 def get_new_symbol():
     global active_symbol
     got_symbol = False
