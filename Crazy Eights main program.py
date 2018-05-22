@@ -59,7 +59,7 @@ def get_new_symbol():
     print '玩家选择了' + active_symbol + '作为最新的花色'
 
 def player_turn():
-    import random
+    # import random
     global hand, up_card, active_symbol, deck, blocked, flower_choice, flower_database
     valid_play = False
     # is_eight = False
@@ -68,55 +68,69 @@ def player_turn():
     for ShouPai in hand:
         print ShouPai.ShortName,  # 向玩家展示其拥有的手牌，并让玩家决定出哪张
     print '现在场上的牌为' + up_card.ShortName  # 提醒玩家，上一张牌是什么，好让他对着出自己的牌
-    if up_card.number == 8:
-        print '由于对方出了8，他指定的花色为' + active_symbol # 表示对方指定的花色
+    print 'test===='+ active_symbol
+    print 'test===='+ up_card.number
+    if up_card.number == '8':
+        print '由于场上的牌为8，指定的花色为' + active_symbol # 表示对方指定的花色
 
 
     # 下面的出牌代码块很可能会被block4里面的代码替代
 
     while not valid_play:
-        chosen_number = raw_input('准备出哪张？1,2,3,4,5?不出而要抽牌的话，请输入0')
-        chosen_number = int(chosen_number)
-        if chosen_number == 0:  # 这表示抽牌的程序
-            if len(deck) > 0:
-                new_card = random.choice(deck)
-                print '你抽了'+ new_card.ShortName
-                hand.append(new_card)
-                deck.remove(new_card)
+        try:
+            chosen_number = raw_input('准备出哪张？1,2,3,4,5?不出而要抽牌的话，请输入0')
+            chosen_number = int(chosen_number)
+            if chosen_number == 0:  # 这表示抽牌的程序
+                if len(deck) > 0:
+                    new_card = random.choice(deck)
+                    print '你抽了'+ new_card.ShortName
+                    hand.append(new_card)
+                    deck.remove(new_card)
+
+                else:
+                    print '牌组已空'
+                    blocked += 1  # 这一个if块 是为了检测是否还有牌可以抽，否则就判定为一方玩家无法行动了
+                # break
+                return
 
             else:
-                print '牌组已空'
-                blocked += 1  # 这一个if块 是为了检测是否还有牌可以抽，否则就判定为一方玩家无法行动了
-            # break
-            # return
+                chosen_number -= 1
+                chosen_card = hand[chosen_number]
 
-        else:
-            chosen_number -= 1
-            chosen_card = hand[chosen_number]
-            if chosen_card.number == 8:
+                # if chosen_card.number == '8':
+                #
+                #     get_new_symbol()
+
+                #     valid_play = True
+                # # block5里面有一个函数会替代这个选花色的内容
+                #     flower_choice = raw_input('请选择你想要的花色，按照顺序为♠，♥，♣，♦，输入1,2,3,4')
+                #     flower_choice = int(flower_choice) -1
+                #     active_symbol = flower_database[flower_choice]
+                #
+                #     # is_eight = True
+
+
+                if chosen_card.symbol == active_symbol:
+
+                    valid_play = True
+                    active_symbol = chosen_card.symbol  # active_card 用来表示出的牌的花色
+
+                elif chosen_card.number == up_card.number:
+                    valid_play = True
+
+                if not valid_play:
+                    print '不是合法的出牌'
+            if chosen_card.number == '8':
+
                 get_new_symbol()
-            #     valid_play = True
-            # # block5里面有一个函数会替代这个选花色的内容
-            #     flower_choice = raw_input('请选择你想要的花色，按照顺序为♠，♥，♣，♦，输入1,2,3,4')
-            #     flower_choice = int(flower_choice) -1
-            #     active_symbol = flower_database[flower_choice]
-            #
-            #     # is_eight = True
+                print 'test==='+ active_symbol
+        except:
+            print '不是合法的出牌'
 
-
-            elif chosen_card.symbol == active_symbol:
-
-                valid_play = True
-                active_symbol = chosen_card.symbol  # active_card 用来表示出的牌的花色
-
-            elif chosen_card.number == up_card.number:
-                valid_play = True
-
-            if not valid_play:
-                print '不是合法的出牌'
 
     hand.remove(chosen_card)
     up_card = chosen_card  # up_card 是明牌，展示自己出的牌来作为对方将要参考的牌
+    active_symbol = up_card.symbol
     print '你出了' + up_card.ShortName
 
 # coding: utf-8
@@ -128,6 +142,7 @@ def computer_turn():
 
     for card in c_hand:
         if card.number == 8:
+
             flower_statistic = [0, 0, 0, 0]
 
             #                    ['♠', '♥', '♣', '♦']
@@ -159,7 +174,8 @@ def computer_turn():
             print '电脑选择了花色'+ active_symbol
             return
 # 以上是对应出8的情况
-        elif card.symbol == active_symbol:
+    for card in c_hand:
+        if card.symbol == active_symbol:
             option.append(card)
 
         elif card.number == up_card.number:
@@ -174,6 +190,7 @@ def computer_turn():
 
         up_card = before_up_card
         c_hand.remove(up_card)
+        active_symbol = up_card.symbol
         print '电脑出了'+ up_card.ShortName
 
     elif len(deck) > 0:
@@ -191,6 +208,7 @@ def computer_turn():
 
 while not finally_done:
     init_cards()# 建立一副牌，以及玩家和电脑抽牌的函数？也就是洗牌
+    game_done = False
     while not game_done:
         p_score = 0
         c_score = 0
@@ -258,9 +276,14 @@ print '游戏结束，最后比分为%d:%d'%(p_win, c_win)
 # 否则抽牌或block加1
 
 # 5.21 bug：
-# 1. 选择出牌的时候，之间按enter键，会报错
-# 2. 选择出牌的时候，如果选择的数字超过手牌数，会报错
+# 1. 选择出牌的时候，之间按enter键，会报错   (ok)
+# 2. 选择出牌的时候，如果选择的数字超过手牌数，会报错 (ok)
 # 3. 玩家回合结束的时候，upcard没有改变
 # 4. 第二轮的时候，出不了同花色的牌，其实是当前upcard显示错误了
-# 5. 抽完牌，回合没结束
+# 5. 抽完牌，回合没结束 （ok）
 # 6. 出8的时候没出现选花色的模块
+
+# 5.22bug:
+# 电脑方的问题比较多。重写电脑方的函数。先判断手牌里面是否有8，如果有，执行一个单独的出8的程序，在extra1里面，还没写的
+# 如果没有8，再执行下面的步骤
+# 电脑的问题就是，在玩家出8之后，选了花色，但是电脑仍按照出的8的花色来出，而不是新制定的花色
