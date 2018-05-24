@@ -10,6 +10,7 @@ game_done = False
 p_win = 0
 c_win = 0
 ping = 0
+cishu = 0
 
 def init_cards():
     global deck, hand, c_hand, up_card, active_symbol
@@ -106,7 +107,8 @@ def player_turn():
     # print 'test===='+ active_symbol
     # print 'test===='+ up_card.number
     if up_card.number == '8':
-        print '由于场上的牌为8，指定的花色为' + active_symbol # 表示对方指定的花色
+        if cishu > 1:
+            print '由于场上的牌为8，指定的花色为' + active_symbol # 表示对方指定的花色
 
 
     # 下面的出牌代码块很可能会被block4里面的代码替代
@@ -155,17 +157,19 @@ def player_turn():
 
                 if not valid_play:
                     print '不是合法的出牌'
-            if chosen_card.number == '8':
+            if chosen_card.number== '8' and valid_play :
 
                 get_new_symbol()
-                # print 'test==='+ active_symbol
+
+                print 'test==='+ active_symbol
         except:
             print '不是合法的出牌'
 
 
     hand.remove(chosen_card)
     up_card = chosen_card  # up_card 是明牌，展示自己出的牌来作为对方将要参考的牌
-    active_symbol = up_card.symbol
+    if up_card.number != '8':
+        active_symbol = up_card.symbol
     print '你出了' + up_card.ShortName
 
 
@@ -178,6 +182,7 @@ def computer_turn():
     for card in c_hand:
         if card.number == '8':
             ready_card = card
+            print 'test==='
             get_new_symbol_for_computer()
 
 
@@ -263,7 +268,7 @@ while not finally_done:
     while not game_done:
         p_score = 0
         c_score = 0
-
+        cishu += 1
         blocked = 0
         # if len(hand) > 0:
         player_turn()
@@ -275,6 +280,7 @@ while not finally_done:
 
         else:
             time.sleep(2)
+            print '====='+ active_symbol
             computer_turn()
 
 
@@ -342,6 +348,10 @@ print '游戏结束，最后比分为%d:%d'%(p_win, c_win)
 # 电脑的问题就是，在玩家出8之后，选了花色，但是电脑仍按照出的8的花色来出，而不是新制定的花色
 
 # 5.23bug
-# 1. 如果一开场的牌为8，就不要再说“指定的花色”了。
+# 1. 如果一开场的牌为8，就不要再说“指定的花色”了。 ok
 # 2. 电脑绝杀牌为8，就不要让它再选花色了
 # 3. 似乎电脑没有执行选花色的函数，注意一下
+# 4. 玩家在改花色的时候电脑还能按照原花色出牌  ok
+
+
+

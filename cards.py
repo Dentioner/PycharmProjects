@@ -54,9 +54,9 @@ class PokerCards:
 
         self.LongName = self.number + ' of ' + self.symbol
 
-    # def __str__(self, flower, num, string):
-    #     test = 'guna'
-    #     p =flower+ num +string
-    #
-    #     return test, p
+# def __str__(self, flower, num, string):
+#     test = 'guna'
+#     p =flower+ num +string
+#
+#     return test, p
 #  失败的一个def
