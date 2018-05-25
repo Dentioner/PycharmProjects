@@ -180,7 +180,7 @@ def computer_turn():
     # flower_database = ['♠', '♥', '♣', '♦']
 
     for card in c_hand:
-        if card.number == '8':
+        if card.number == '8' and len(c_hand) > 1:
             ready_card = card
             print 'test==='
             get_new_symbol_for_computer()
@@ -352,6 +352,7 @@ print '游戏结束，最后比分为%d:%d'%(p_win, c_win)
 # 2. 电脑绝杀牌为8，就不要让它再选花色了
 # 3. 似乎电脑没有执行选花色的函数，注意一下
 # 4. 玩家在改花色的时候电脑还能按照原花色出牌  ok
+
 
 
 

@@ -5,7 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Crazy Eights main program.py" beforeDir="false" afterPath="$PROJECT_DIR$/Crazy Eights main program.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cards.py" beforeDir="false" afterPath="$PROJECT_DIR$/cards.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -32,17 +31,10 @@
       <file leaf-file-name="Crazy Eights main program.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Crazy Eights main program.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="477">
-              <caret line="354" selection-start-line="354" selection-end-line="354" />
+            <state relative-caret-position="547">
+              <caret line="355" lean-forward="true" selection-start-line="355" selection-end-line="355" />
               <folding>
                 <element signature="n#!!doc" />
-                <element signature="e#175#828#0" />
-                <element signature="e#1403#2327#0" />
-                <element signature="e#2683#2716#0" />
-                <element signature="e#2804#2867#0" />
-                <element signature="e#3604#3635#0" />
-                <element signature="e#4756#7498#0" />
-                <element signature="e#7599#8745#0" />
               </folding>
             </state>
           </provider>
@@ -371,18 +363,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.1591078" />
       <window_info anchor="bottom" id="Version Control" order="1" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.3297194" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.3056266" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39974537" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.3056266" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39974537" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -761,17 +752,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Crazy Eights main program.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="354" selection-start-line="354" selection-end-line="354" />
+        <state relative-caret-position="547">
+          <caret line="355" lean-forward="true" selection-start-line="355" selection-end-line="355" />
           <folding>
             <element signature="n#!!doc" />
-            <element signature="e#175#828#0" />
-            <element signature="e#1403#2327#0" />
-            <element signature="e#2683#2716#0" />
-            <element signature="e#2804#2867#0" />
-            <element signature="e#3604#3635#0" />
-            <element signature="e#4756#7498#0" />
-            <element signature="e#7599#8745#0" />
           </folding>
         </state>
       </provider>
