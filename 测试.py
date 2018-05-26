@@ -1,6 +1,12 @@
 # coding: utf-8
-try:
-    a = int(raw_input())
+from cards import PokerCards
 
-except:
-    print 'fuck'
+deck = []
+for flower in range(1, 5):
+    for num in range(1, 14):
+        new_card = PokerCards(flower, num)
+
+        deck.append(new_card)
+
+for card in deck:
+    print card.ShortName

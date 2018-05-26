@@ -7,10 +7,17 @@ hand = []
 c_hand = []
 finally_done = False
 game_done = False
+final_quest = False
 p_win = 0
 c_win = 0
 ping = 0
 cishu = 0
+# blocked = 0
+p_blocked = False
+c_blocked = False
+p_score = 0
+c_score = 0
+
 
 def init_cards():
     global deck, hand, c_hand, up_card, active_symbol
@@ -19,7 +26,7 @@ def init_cards():
     # 为牌组重新赋值，由于8最大
     deck = []
     for flower in range(1, 5):
-        for num in range(1, 15):
+        for num in range(1, 14):
             new_card = PokerCards(flower, num)
             if new_card.number == 8:
                 new_card.value =50
@@ -38,6 +45,7 @@ def init_cards():
     up_card = random.choice(deck)
     active_symbol = up_card.symbol
     deck.remove(up_card)
+
 
 def get_new_symbol():
     global active_symbol
@@ -59,6 +67,7 @@ def get_new_symbol():
              print '输入不合法，请重试'
 
     print '玩家选择了' + active_symbol + '作为最新的花色'
+
 
 def get_new_symbol_for_computer():
     global c_hand, ready_card, up_card, active_symbol
@@ -90,13 +99,13 @@ def get_new_symbol_for_computer():
     up_card = ready_card
     active_symbol = flower_database[best_flower]
     c_hand.remove(up_card)
-    print '电脑打出了'+ up_card.ShortName
-    print '电脑选择了花色'+ active_symbol
+    print '电脑打出了' + up_card.ShortName
+    print '电脑选择了花色' + active_symbol
 
 
 def player_turn():
     # import random
-    global hand, up_card, active_symbol, deck, blocked, flower_choice, flower_database
+    global hand, up_card, active_symbol, deck, blocked, flower_choice, flower_database, p_blocked
     valid_play = False
     # is_eight = False
 
@@ -111,7 +120,7 @@ def player_turn():
             print '由于场上的牌为8，指定的花色为' + active_symbol # 表示对方指定的花色
 
 
-    # 下面的出牌代码块很可能会被block4里面的代码替代
+# 下面的出牌代码块很可能会被block4里面的代码替代
 
     while not valid_play:
         try:
@@ -120,13 +129,14 @@ def player_turn():
             if chosen_number == 0:  # 这表示抽牌的程序
                 if len(deck) > 0:
                     new_card = random.choice(deck)
-                    print '你抽了'+ new_card.ShortName
+                    print '你抽了' + new_card.ShortName
                     hand.append(new_card)
                     deck.remove(new_card)
 
                 else:
                     print '牌组已空'
-                    blocked += 1  # 这一个if块 是为了检测是否还有牌可以抽，否则就判定为一方玩家无法行动了
+                    p_blocked = True
+                    # blocked += 1  # 这一个if块 是为了检测是否还有牌可以抽，否则就判定为一方玩家无法行动了
                 # break
                 return
 
@@ -146,7 +156,6 @@ def player_turn():
                 #
                 #     # is_eight = True
 
-
                 if chosen_card.symbol == active_symbol:
 
                     valid_play = True
@@ -161,10 +170,9 @@ def player_turn():
 
                 get_new_symbol()
 
-                print 'test==='+ active_symbol
+                # print 'test==='+ active_symbol
         except:
             print '不是合法的出牌'
-
 
     hand.remove(chosen_card)
     up_card = chosen_card  # up_card 是明牌，展示自己出的牌来作为对方将要参考的牌
@@ -174,17 +182,18 @@ def player_turn():
 
 
 def computer_turn():
-    import random
-    global c_hand, active_symbol, up_card, deck, block, ready_card
+    # import random
+    global c_hand, active_symbol, up_card, deck, blocked, ready_card, c_blocked
     option = []
     # flower_database = ['♠', '♥', '♣', '♦']
 
     for card in c_hand:
-        if card.number == '8' and len(c_hand) > 1:
+        print 'test===c-hand=' + str(len(c_hand))
+        if card.number == '8' and str(len(c_hand)) != 1:
             ready_card = card
-            print 'test==='
+            print 'test===，在get new symbol 函数之前'
             get_new_symbol_for_computer()
-
+            print '在函数之后'
 
             # flower_statistic = [0, 0, 0, 0]
             #
@@ -236,26 +245,30 @@ def computer_turn():
                 up_card = before_up_card
                 # print 'mark4'
                 active_symbol = up_card.symbol
-                print '电脑出了'+ up_card.ShortName
+                print '电脑出了' + up_card.ShortName
 
                 # print 'mark5'
                 c_hand.remove(up_card)
-                print '电脑手中还有%d张牌'%len(c_hand)
+                print '电脑手中还有%d张牌' % len(c_hand)
                 return
                 # print 'mark6'
             elif len(deck) > 0:
                 new_card = random.choice(deck)
                 c_hand.append(new_card)
+                deck.remove(new_card)
                 print '电脑摸了一张牌'
-                print '电脑手中还有%d张牌'%len(c_hand)
+                print '电脑手中还有%d张牌' % len(c_hand)
                 return
 
             else:
-                block += 1
+                # blocked += 1
+                c_blocked = True
                 print '电脑动不了了'
-                print '电脑手中还有%d张牌'%len(c_hand)
+                print '电脑手中还有%d张牌' % len(c_hand)
+                return
 
-    print '电脑手中还有%d张牌'%len(c_hand)
+    print '电脑手中还有%d张牌' % len(c_hand)
+
 
 print '★★★★★★★★★★★'
 print '★Crazy Eights ver1.0★'
@@ -263,14 +276,23 @@ print '★★★★★★★★★★★'
 
 while not finally_done:
     print '============================================================================================================================='
-    init_cards()# 建立一副牌，以及玩家和电脑抽牌的函数？也就是洗牌
+    init_cards()  # 建立一副牌，以及玩家和电脑抽牌的函数？也就是洗牌
     game_done = False
+    final_quest = False
+
+    # p_score = 0
+    # c_score = 0
     while not game_done:
-        p_score = 0
-        c_score = 0
-        cishu += 1
-        blocked = 0
+        cishu += 1  # 回合数
+        # print 'blocked=%d'%blocked
+        # blocked = 0
         # if len(hand) > 0:
+        # print 'test1==='+ str(len(deck))
+        # print 'p_block',
+        # print p_blocked
+        # print 'c_block',
+        # print c_blocked
+
         player_turn()
 
         if len(hand) == 0:
@@ -279,17 +301,17 @@ while not finally_done:
             p_win += 1
 
         else:
-            time.sleep(2)
-            print '====='+ active_symbol
+            time.sleep(0)
+            # print '====='+ active_symbol
             computer_turn()
-
+            # print 'test2==='+ str(len(deck))
 
             if len(c_hand) == 0:
                 print '你输了'
                 game_done = True
                 c_win += 1
 
-            elif blocked == 2:
+            elif c_blocked and p_blocked:
                 print '破游戏玩不下去了'
                 ping += 1
                 game_done = True
@@ -301,28 +323,34 @@ while not finally_done:
     for card in c_hand:
         p_score += card.value
 
-    print '玩家得分为%d'%p_score
-    print '电脑得分为%d'%c_score
+    print '玩家得分为%d' % p_score
+    print '电脑得分为%d' % c_score
 
-    print '至此双方比分为%d:%d'%(p_win, c_win)
+    print '至此双方比分为%d:%d' % (p_win ,c_win),
+    print '平%d场' % ping
 
-    a = raw_input('\n还要来吗？（Y/N）')
-
-    if a.lower() == 'y':
-        finally_done = False
-        hand = []
-        c_hand = []
-
-    else:
-        finally_done = True
-
+    while not final_quest:
+        a = raw_input('\n还要来吗？（Y/N）')
+        if a.lower() == 'y':
+            finally_done = False
+            hand = []
+            c_hand = []
+            final_quest = True
+            c_blocked = False
+            p_blocked = False
+        elif a.lower() == 'n':
+            finally_done = True
+            final_quest = True
+        else:
+            final_quest = False
+            print '输入不合法'
 print '游戏结束，最后比分为%d:%d'%(p_win, c_win)
 
-    # 两个布尔指标，一个用来判断是否继续游戏，一个判断每一盘是否结束
-    # 表示出得分
-    # 考虑平局
-    # 每一盘结束打印至此的分数
-    # 最终结束打印最后分数
+# 两个布尔指标，一个用来判断是否继续游戏，一个判断每一盘是否结束
+# 表示出得分
+# 考虑平局
+# 每一盘结束打印至此的分数
+# 最终结束打印最后分数
 
 
 
@@ -354,5 +382,7 @@ print '游戏结束，最后比分为%d:%d'%(p_win, c_win)
 # 4. 玩家在改花色的时候电脑还能按照原花色出牌  ok
 
 
+# 5.26bug
+# 1. 电脑确定不会执行选花色的函数，但是见过它执行过一次
 
 
