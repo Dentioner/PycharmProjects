@@ -188,12 +188,10 @@ def computer_turn():
     # flower_database = ['♠', '♥', '♣', '♦']
 
     for card in c_hand:
-        print 'test===c-hand=' + str(len(c_hand))
         if card.number == '8' and str(len(c_hand)) != 1:
             ready_card = card
-            print 'test===，在get new symbol 函数之前'
             get_new_symbol_for_computer()
-            print '在函数之后'
+            # print '在函数之后'
 
             # flower_statistic = [0, 0, 0, 0]
             #
@@ -225,49 +223,58 @@ def computer_turn():
             # print '电脑打出了'+ up_card.ShortName
             # print '电脑选择了花色'+ active_symbol
             return
-        else:
-            for card in c_hand:
-                if card.symbol == active_symbol:
-                    option.append(card)
 
-                elif card.number == up_card.number:
-                    option.append(card)
+        else:
+            if card.symbol == active_symbol:
+             option.append(card)
+
+            elif card.number == up_card.number:
+             option.append(card)
+
+        # else:
+        #     for card in c_hand:
+        #         if card.symbol == active_symbol:
+        #             option.append(card)
+        #
+        #         elif card.number == up_card.number:
+        #             option.append(card)
 # 把能出的牌放进option里面
 
-            if len(option) > 0:
-                before_up_card = option[0]
-                # print 'mark1'
-                for i in range(1, len(option)):
-                    if option[i].value > before_up_card.value:
-                        before_up_card = option[i]
-                        # print 'mark2,type%d'%i
-                    # print 'mark3'
-                up_card = before_up_card
-                # print 'mark4'
-                active_symbol = up_card.symbol
-                print '电脑出了' + up_card.ShortName
+    if len(option) > 0:
+        before_up_card = option[0]
+        # print 'mark1'
+        for i in range(1, len(option)):
+            if option[i].value > before_up_card.value:
+                before_up_card = option[i]
+                # print 'mark2,type%d'%i
+            # print 'mark3'
+        up_card = before_up_card
+        # print 'mark4'
+        active_symbol = up_card.symbol
+        print '电脑出了' + up_card.ShortName
 
-                # print 'mark5'
-                c_hand.remove(up_card)
-                print '电脑手中还有%d张牌' % len(c_hand)
-                return
-                # print 'mark6'
-            elif len(deck) > 0:
-                new_card = random.choice(deck)
-                c_hand.append(new_card)
-                deck.remove(new_card)
-                print '电脑摸了一张牌'
-                print '电脑手中还有%d张牌' % len(c_hand)
-                return
+        # print 'mark5'
+        c_hand.remove(up_card)
+        print '电脑手中还有%d张牌' % len(c_hand)
+        return
+        # print 'mark6'
+    elif len(deck) > 0:
+        new_card = random.choice(deck)
+        c_hand.append(new_card)
+        deck.remove(new_card)
+        print '电脑摸了一张牌'
+        print '电脑手中还有%d张牌' % len(c_hand)
+        return
 
-            else:
-                # blocked += 1
-                c_blocked = True
-                print '电脑动不了了'
-                print '电脑手中还有%d张牌' % len(c_hand)
-                return
+    else:
+        # blocked += 1
+        c_blocked = True
+        print '电脑动不了了'
+        print '电脑手中还有%d张牌' % len(c_hand)
+        return
 
     print '电脑手中还有%d张牌' % len(c_hand)
+
 
 
 print '★★★★★★★★★★★'
@@ -301,7 +308,7 @@ while not finally_done:
             p_win += 1
 
         else:
-            time.sleep(0)
+            time.sleep(2)
             # print '====='+ active_symbol
             computer_turn()
             # print 'test2==='+ str(len(deck))
@@ -383,6 +390,8 @@ print '游戏结束，最后比分为%d:%d'%(p_win, c_win)
 
 
 # 5.26bug
-# 1. 电脑确定不会执行选花色的函数，但是见过它执行过一次
+# 1. 电脑确定不会执行选花色的函数，但是见过它执行过一次  ok
 
 
+# 5.27bug
+# 1. 第二局开场如果是8的话，还是会说‘指定的花色’
