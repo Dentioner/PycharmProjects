@@ -17,6 +17,7 @@ p_blocked = False
 c_blocked = False
 p_score = 0
 c_score = 0
+flower_database = ['♠', '♥', '♣', '♦']
 
 
 def init_cards():
@@ -29,18 +30,18 @@ def init_cards():
         for num in range(1, 14):
             new_card = PokerCards(flower, num)
             if new_card.number == 8:
-                new_card.value =50
+                new_card.value = 50
             deck.append(new_card)
 
     for i in range(5):
-        card = random.choice(deck)
-        hand.append(card)
-        deck.remove(card)
+        p_card = random.choice(deck)
+        hand.append(p_card)
+        deck.remove(p_card)
 
     for i in range(5):
-        card = random.choice(deck)
-        c_hand.append(card)
-        deck.remove(card)
+        c_card = random.choice(deck)
+        c_hand.append(c_card)
+        deck.remove(c_card)
 
     up_card = random.choice(deck)
     active_symbol = up_card.symbol
@@ -48,12 +49,13 @@ def init_cards():
 
 
 def get_new_symbol():
-    global active_symbol
+    global active_symbol, flower_database
     got_symbol = False
-    flower_database = ['♠', '♥', '♣', '♦']
 
     while not got_symbol:
         choice = raw_input('请选择你想要的花色，按照顺序为♠，♥，♣，♦，输入1,2,3,4')
+
+        # noinspection PyBroadException
         try:
             if 1 <= int(choice) <= 4:
                 choice = int(choice) - 1
@@ -64,25 +66,26 @@ def get_new_symbol():
                 print '输入不合法，请重试'
 
         except:
-             print '输入不合法，请重试'
+
+            print '输入不合法，请重试'
 
     print '玩家选择了' + active_symbol + '作为最新的花色'
 
 
 def get_new_symbol_for_computer():
-    global c_hand, ready_card, up_card, active_symbol
+    global c_hand, ready_card, up_card, active_symbol, flower_database
     flower_statistic = [0, 0, 0, 0]
     #                    ['♠', '♥', '♣', '♦']
-    flower_database = ['♠', '♥', '♣', '♦']
+    # flower_database = ['♠', '♥', '♣', '♦']
 
-    for card in c_hand:
-        if card.symbol == '♠':
+    for cc_card in c_hand:
+        if cc_card.symbol == '♠':
             flower_statistic[0] += 1
-        elif card.symbol == '♥':
+        elif cc_card.symbol == '♥':
             flower_statistic[1] += 1
-        elif card.symbol == '♣':
+        elif cc_card.symbol == '♣':
             flower_statistic[2] += 1
-        elif card.symbol == '♦':
+        elif cc_card.symbol == '♦':
             flower_statistic[3] += 1
         # 统计四种花色在手牌中的个数
 
@@ -123,6 +126,7 @@ def player_turn():
 # 下面的出牌代码块很可能会被block4里面的代码替代
 
     while not valid_play:
+        # noinspection PyBroadException
         try:
             chosen_number = raw_input('准备出哪张？1,2,3,...?不出而要抽牌的话，请输入0')
             chosen_number = int(chosen_number)
@@ -166,7 +170,7 @@ def player_turn():
 
                 if not valid_play:
                     print '不是合法的出牌'
-            if chosen_card.number== '8' and valid_play :
+            if chosen_card.number == '8' and valid_play and len(hand) > 1:
 
                 get_new_symbol()
 
@@ -188,48 +192,51 @@ def computer_turn():
     # flower_database = ['♠', '♥', '♣', '♦']
 
     for card in c_hand:
-        if card.number == '8' and str(len(c_hand)) != 1:
-            ready_card = card
-            get_new_symbol_for_computer()
-            # print '在函数之后'
+        # if card.number == up_card.number or card.symbol == active_symbol:
+        if card.number == '8' and str(len(c_hand)) != 1 :
 
-            # flower_statistic = [0, 0, 0, 0]
-            #
-            # #                    ['♠', '♥', '♣', '♦']
-            # for card in c_hand:
-            #     if card.symbol == '♠':
-            #         flower_statistic[0] += 1
-            #     elif card.symbol == '♥':
-            #         flower_statistic[1] += 1
-            #     elif card.symbol == '♣':
-            #         flower_statistic[2] += 1
-            #     elif card.symbol == '♦':
-            #         flower_statistic[3] += 1
-            #     # 统计四种花色在手牌中的个数
-            #
-            # best_flower = 0
-            # if flower_statistic[1] > flower_statistic[0]:
-            #     best_flower = 1
-            #
-            # elif flower_statistic[2] > flower_statistic[0]:
-            #     best_flower = 2
-            #
-            # elif flower_statistic[3] > flower_statistic[0]:
-            #     best_flower = 3
-            #
-            # active_symbol = flower_database[best_flower]
-            # up_card = card
-            # c_hand.remove(card)
-            # print '电脑打出了'+ up_card.ShortName
-            # print '电脑选择了花色'+ active_symbol
-            return
+            ready_card = card
+            if ready_card.symbol == active_symbol or ready_card.number == up_card.number:
+                get_new_symbol_for_computer()
+        # print '在函数之后'
+
+        # flower_statistic = [0, 0, 0, 0]
+        #
+        # #                    ['♠', '♥', '♣', '♦']
+        # for card in c_hand:
+        #     if card.symbol == '♠':
+        #         flower_statistic[0] += 1
+        #     elif card.symbol == '♥':
+        #         flower_statistic[1] += 1
+        #     elif card.symbol == '♣':
+        #         flower_statistic[2] += 1
+        #     elif card.symbol == '♦':
+        #         flower_statistic[3] += 1
+        #     # 统计四种花色在手牌中的个数
+        #
+        # best_flower = 0
+        # if flower_statistic[1] > flower_statistic[0]:
+        #     best_flower = 1
+        #
+        # elif flower_statistic[2] > flower_statistic[0]:
+        #     best_flower = 2
+        #
+        # elif flower_statistic[3] > flower_statistic[0]:
+        #     best_flower = 3
+        #
+        # active_symbol = flower_database[best_flower]
+        # up_card = card
+        # c_hand.remove(card)
+        # print '电脑打出了'+ up_card.ShortName
+        # print '电脑选择了花色'+ active_symbol
+                return
 
         else:
             if card.symbol == active_symbol:
-             option.append(card)
+                option.append(card)
 
             elif card.number == up_card.number:
-             option.append(card)
+                option.append(card)
 
         # else:
         #     for card in c_hand:
@@ -276,7 +283,6 @@ def computer_turn():
     print '电脑手中还有%d张牌' % len(c_hand)
 
 
-
 print '★★★★★★★★★★★'
 print '★Crazy Eights ver1.0★'
 print '★★★★★★★★★★★'
@@ -286,7 +292,7 @@ while not finally_done:
     init_cards()  # 建立一副牌，以及玩家和电脑抽牌的函数？也就是洗牌
     game_done = False
     final_quest = False
-
+    cishu = 0
     # p_score = 0
     # c_score = 0
     while not game_done:
@@ -333,7 +339,8 @@ while not finally_done:
     print '玩家得分为%d' % p_score
     print '电脑得分为%d' % c_score
 
-    print '至此双方比分为%d:%d' % (p_win ,c_win),
+    print '至此双方比分为%d:%d' % (p_win ,c_win) ,
+
     print '平%d场' % ping
 
     while not final_quest:
@@ -395,3 +402,4 @@ print '游戏结束，最后比分为%d:%d'%(p_win, c_win)
 
 # 5.27bug
 # 1. 第二局开场如果是8的话，还是会说‘指定的花色’
+
