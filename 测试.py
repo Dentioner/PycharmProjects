@@ -1,5 +1,4 @@
-# coding: utf-8
-import math
+from __future__ import division
+b = 1/2
 
-a = 1.0/2.0
-print a
+print b
