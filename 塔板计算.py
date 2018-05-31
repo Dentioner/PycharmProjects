@@ -31,6 +31,9 @@ def ta_ban(K):
         a = str(a)
         plate.write(a+'\n')
 
+        # print density
+        # 如果要输出一个表格的话，就把这一项注释解开，把上面那五行代码变成注释
+
         print
         i += 1
     plate.close()
