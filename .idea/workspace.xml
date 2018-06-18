@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba3c692-dbd9-48b9-9ed8-352b61de419d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/6.17.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/弱智现代艺术.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/6.18.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/6.17.py" beforeDir="false" afterPath="$PROJECT_DIR$/6.17.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/测试.py" beforeDir="false" afterPath="$PROJECT_DIR$/测试.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -16,50 +17,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="600">
-      <file leaf-file-name="测试.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="测试.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/测试.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+            <state relative-caret-position="308">
+              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="6.15.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/6.15.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="28">
-              <caret line="1" selection-start-line="1" selection-end-line="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6.16.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/6.16.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="6" column="53" selection-start-line="6" selection-start-column="53" selection-end-line="6" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="弱智现代艺术.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/弱智现代艺术.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="36" lean-forward="true" selection-start-line="29" selection-end-line="36" />
-              <folding>
-                <element signature="e#16#42#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="6.17.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="6.17.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6.17.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="308">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="42" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="6.18.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/6.18.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
             </state>
           </provider>
         </entry>
@@ -85,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/5.2.py" />
         <option value="$PROJECT_DIR$/5.3.py" />
         <option value="$PROJECT_DIR$/5.4.py" />
         <option value="$PROJECT_DIR$/5.5.py" />
@@ -118,7 +97,6 @@
         <option value="$PROJECT_DIR$/5.30.py" />
         <option value="$PROJECT_DIR$/5.31.py" />
         <option value="$PROJECT_DIR$/弱智打字速度测试器.py" />
-        <option value="$PROJECT_DIR$/测试.py" />
         <option value="$PROJECT_DIR$/塔板理论 可变k，n.py" />
         <option value="$PROJECT_DIR$/塔板计算.py" />
         <option value="$PROJECT_DIR$/6.2.py" />
@@ -136,6 +114,8 @@
         <option value="$PROJECT_DIR$/6.15.py" />
         <option value="$PROJECT_DIR$/6.16.py" />
         <option value="$PROJECT_DIR$/6.17.py" />
+        <option value="$PROJECT_DIR$/6.18.py" />
+        <option value="$PROJECT_DIR$/测试.py" />
       </list>
     </option>
   </component>
@@ -186,7 +166,25 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.6.17 (1)">
+  <component name="RunManager" selected="Python.6.18">
+    <configuration name="测试" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="6.15" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -259,6 +257,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="6.18" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6.18.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="6.4" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -272,24 +288,6 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6.4.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
-    <configuration name="6.7" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PycharmProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/6.7.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -313,43 +311,25 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="another..." type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PycharmProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/another....py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
     <list>
       <item itemvalue="Python.6.15" />
-      <item itemvalue="Python.another..." />
       <item itemvalue="Python.6.16" />
-      <item itemvalue="Python.6.17" />
       <item itemvalue="Python.6.17 (1)" />
+      <item itemvalue="Python.6.18" />
+      <item itemvalue="Python.测试" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.6.18" />
+        <item itemvalue="Python.测试" />
         <item itemvalue="Python.6.17 (1)" />
-        <item itemvalue="Python.6.17" />
         <item itemvalue="Python.6.16" />
         <item itemvalue="Python.6.15" />
-        <item itemvalue="Python.another..." />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Dentioner Tchang\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
@@ -358,7 +338,7 @@
       <window_info content_ui="combo" id="Project" order="0" weight="0.1591078" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32992327" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.3286445" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.3056266" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.30179027" />
       <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
@@ -378,32 +358,32 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/3.24.py</url>
+          <url />
           <line>1</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Crazy Eights main program.py</url>
+          <url />
           <line>2</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.8.py</url>
+          <url />
           <line>3</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.8.py</url>
+          <url />
           <line>4</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.8.py</url>
+          <url />
           <line>2</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.10.py</url>
+          <url />
           <line>1</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
@@ -421,13 +401,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/5.1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="4" column="11" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/5.2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -732,13 +705,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/测试.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/6.14.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="252">
@@ -769,8 +735,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/弱智现代艺术.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="36" lean-forward="true" selection-start-line="29" selection-end-line="36" />
+        <state relative-caret-position="980">
+          <caret line="36" selection-start-line="29" selection-end-line="36" />
           <folding>
             <element signature="e#16#42#0" expanded="true" />
           </folding>
@@ -780,7 +746,21 @@
     <entry file="file://$PROJECT_DIR$/6.17.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/6.18.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="3" column="35" selection-start-line="3" selection-start-column="35" selection-end-line="3" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/测试.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
         </state>
       </provider>
     </entry>
