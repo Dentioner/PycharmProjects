@@ -9,3 +9,25 @@ class MyBall(pygame.sprite.Sprite):
         self.rect.left, self.rect.top = location
 
 
+pygame.init()
+screen = pygame.display.set_mode([640, 480])
+screen.fill([255, 255, 255])
+pic = 'beach_ball.png'
+balls = []
+for hang in range(3):
+    for lie in range(3):
+        location = [hang*180 + 10, lie*180 + 10]
+        ball = MyBall(pic, location)
+        balls.append(ball)
+
+for ball in balls:
+    screen.blit(ball.image, ball.rect)
+pygame.display.flip()
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            sys.exit()
+
+
+
