@@ -31,7 +31,7 @@ while a == True:
     if x < 0 or x > screen.get_width() - 90:
         x_speed = -x_speed
 
-    if y<0 or y > screen.get_height() -90:
+    if y<0 or y > screen.get_height() - 90:
         y_speed = -y_speed
     pygame.display.flip()
 
