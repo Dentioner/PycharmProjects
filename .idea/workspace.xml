@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba3c692-dbd9-48b9-9ed8-352b61de419d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/7.7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/7.8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -63,7 +63,7 @@
       <file leaf-file-name="6.28.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/6.28.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="505">
+            <state relative-caret-position="2156">
               <caret line="78" selection-start-line="78" selection-end-line="79" />
               <folding>
                 <element signature="e#16#34#0" expanded="true" />
@@ -72,14 +72,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="7.7.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="7.7.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/7.7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="310">
-              <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+            <state relative-caret-position="108">
+              <caret line="4" selection-start-line="4" selection-end-line="20" />
               <folding>
                 <element signature="e#16#34#0" expanded="true" />
+                <element signature="e#97#631#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="7.8.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/7.8.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="526">
+              <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -105,7 +115,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/5.12.py" />
         <option value="$PROJECT_DIR$/5.11.py" />
         <option value="$PROJECT_DIR$/Crazy Eight v.01.py" />
         <option value="$PROJECT_DIR$/Crazy Eights block1.py" />
@@ -156,10 +165,11 @@
         <option value="D:/学习/Python/书的源代码/Listing_17-3.py" />
         <option value="$PROJECT_DIR$/6.28.py" />
         <option value="$PROJECT_DIR$/7.7.py" />
+        <option value="$PROJECT_DIR$/7.8.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-10" />
     <option name="width" value="1390" />
     <option name="height" value="1756" />
@@ -206,25 +216,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.7.7">
-    <configuration name="测试" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="PycharmProjects" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/测试.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-    </configuration>
+  <component name="RunManager" selected="Python.7.8">
     <configuration name="6.17" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -315,6 +307,24 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
+    <configuration name="7.8" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PycharmProjects" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/7.8.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+    </configuration>
     <configuration name="Listing_17-2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -352,39 +362,39 @@
       <option name="MODULE_MODE" value="false" />
     </configuration>
     <list>
-      <item itemvalue="Python.测试" />
       <item itemvalue="Python.6.28" />
       <item itemvalue="Python.Listing_17-2" />
       <item itemvalue="Python.Listing_17-3" />
       <item itemvalue="Python.7.7" />
+      <item itemvalue="Python.7.8" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.7.8" />
         <item itemvalue="Python.7.7" />
         <item itemvalue="Python.6.28" />
         <item itemvalue="Python.Listing_17-3" />
         <item itemvalue="Python.Listing_17-2" />
-        <item itemvalue="Python.测试" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration>C:\Users\Dentioner Tchang\AppData\Roaming\Subversion</configuration>
+    <configuration />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
+    <frame x="-5" y="0" width="695" height="878" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.15762082" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32992327" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.3286445" />
-      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.28516623" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="bottom" id="Run" order="4" weight="0.28516623" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
@@ -398,32 +408,32 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/3.24.py</url>
+          <url />
           <line>1</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Crazy Eights main program.py</url>
+          <url />
           <line>2</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.8.py</url>
+          <url />
           <line>3</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.8.py</url>
+          <url />
           <line>4</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.8.py</url>
+          <url />
           <line>2</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/6.10.py</url>
+          <url />
           <line>1</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
@@ -450,13 +460,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Crazy Eights block2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crazy Eights etc.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -801,7 +804,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/6.28.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="505">
+        <state relative-caret-position="2156">
           <caret line="78" selection-start-line="78" selection-end-line="79" />
           <folding>
             <element signature="e#16#34#0" expanded="true" />
@@ -811,11 +814,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/7.7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="310">
-          <caret line="63" column="19" selection-start-line="63" selection-start-column="19" selection-end-line="63" selection-end-column="19" />
+        <state relative-caret-position="108">
+          <caret line="4" selection-start-line="4" selection-end-line="20" />
           <folding>
             <element signature="e#16#34#0" expanded="true" />
+            <element signature="e#97#631#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/7.8.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
         </state>
       </provider>
     </entry>
