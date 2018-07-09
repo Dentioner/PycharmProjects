@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ba3c692-dbd9-48b9-9ed8-352b61de419d" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/7.8.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/7.8.py" beforeDir="false" afterPath="$PROJECT_DIR$/7.8.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -75,7 +75,7 @@
       <file leaf-file-name="7.7.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/7.7.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
+            <state relative-caret-position="84">
               <caret line="4" selection-start-line="4" selection-end-line="20" />
               <folding>
                 <element signature="e#16#34#0" expanded="true" />
@@ -88,8 +88,11 @@
       <file leaf-file-name="7.8.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/7.8.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="526">
-              <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+            <state relative-caret-position="339">
+              <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+              <folding>
+                <element signature="e#528#568#0" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -169,7 +172,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="width" value="1390" />
     <option name="height" value="1756" />
@@ -196,7 +199,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="Python" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/6.21.py" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/7.8.py" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
   </component>
   <component name="RecentsManager">
@@ -325,7 +328,7 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Listing_17-2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Listing_18-1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -337,13 +340,13 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:/学习/Python/书的源代码/Listing_17-2.py" />
+      <option name="SCRIPT_NAME" value="D:/学习/Python/书的源代码/Listing_18-1.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
     </configuration>
-    <configuration name="Listing_17-3" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="Listing_18-2" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PycharmProjects" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -355,7 +358,7 @@
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="D:/学习/Python/书的源代码/Listing_17-3.py" />
+      <option name="SCRIPT_NAME" value="D:/学习/Python/书的源代码/Listing_18-2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -363,43 +366,59 @@
     </configuration>
     <list>
       <item itemvalue="Python.6.28" />
-      <item itemvalue="Python.Listing_17-2" />
-      <item itemvalue="Python.Listing_17-3" />
       <item itemvalue="Python.7.7" />
       <item itemvalue="Python.7.8" />
+      <item itemvalue="Python.Listing_18-1" />
+      <item itemvalue="Python.Listing_18-2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Python.7.8" />
+        <item itemvalue="Python.Listing_18-2" />
+        <item itemvalue="Python.Listing_18-1" />
         <item itemvalue="Python.7.7" />
         <item itemvalue="Python.6.28" />
-        <item itemvalue="Python.Listing_17-3" />
-        <item itemvalue="Python.Listing_17-2" />
       </list>
     </recent_temporary>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\Dentioner Tchang\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-5" y="0" width="695" height="878" extended-state="0" />
+    <frame x="-6" y="-6" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.15762082" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.07657993" />
       <window_info anchor="bottom" id="Version Control" order="1" weight="0.32992327" />
       <window_info anchor="bottom" id="Python Console" order="0" weight="0.3286445" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.28388748" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="TODO" order="8" />
-      <window_info anchor="bottom" id="Run" order="4" weight="0.28516623" />
-      <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="3" />
     </layout>
+    <layout-to-restore>
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.07657993" />
+      <window_info id="Structure" order="1" weight="0.25" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info active="true" anchor="bottom" id="Run" order="4" visible="true" weight="0.28388748" />
+      <window_info anchor="bottom" id="Debug" order="5" weight="0.39897698" />
+      <window_info anchor="bottom" id="Message" order="2" />
+      <window_info anchor="bottom" id="Version Control" order="1" weight="0.32992327" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Python Console" order="0" weight="0.3286445" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -408,32 +427,32 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/3.24.py</url>
           <line>1</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/Crazy Eights main program.py</url>
           <line>2</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/6.8.py</url>
           <line>3</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/6.8.py</url>
           <line>4</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/6.8.py</url>
           <line>2</line>
           <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url />
+          <url>file://$PROJECT_DIR$/6.10.py</url>
           <line>1</line>
           <option name="timeStamp" value="78" />
         </line-breakpoint>
@@ -460,20 +479,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Crazy Eights etc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Crazy Eights block4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1204">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Crazy Eights block5.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="56">
@@ -814,7 +819,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/7.7.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="84">
           <caret line="4" selection-start-line="4" selection-end-line="20" />
           <folding>
             <element signature="e#16#34#0" expanded="true" />
@@ -823,10 +828,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/学习/Python/书的源代码/Listing_18-1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="22" column="8" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="n#!!doc" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/学习/Python/书的源代码/Listing_18-2.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/7.8.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="526">
-          <caret line="45" column="24" selection-start-line="45" selection-start-column="24" selection-end-line="45" selection-end-column="24" />
+        <state relative-caret-position="339">
+          <caret line="53" column="55" selection-start-line="53" selection-start-column="55" selection-end-line="53" selection-end-column="55" />
+          <folding>
+            <element signature="e#528#568#0" />
+          </folding>
         </state>
       </provider>
     </entry>
