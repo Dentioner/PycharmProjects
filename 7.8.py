@@ -6,7 +6,9 @@ screen = pygame.display.set_mode([640, 480])
 background = pygame.Surface(screen.get_size())
 background.fill([255, 255, 255])
 clock = pygame.time.Clock()
-
+delay = 100
+interval = 50
+pygame.key.set_repeat(delay, interval)
 class MyBall(pygame.sprite.Sprite):
     def __init__(self, image_file, speed, location):
         pygame.sprite.Sprite.__init__(self)
@@ -58,3 +60,5 @@ while True:
     my_ball.move()
     screen.blit(my_ball.image, my_ball.rect)
     pygame.display.flip()
+
+
