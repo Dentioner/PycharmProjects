@@ -55,6 +55,10 @@ while True:
             elif event.key == pygame.K_LEFT:
                 my_ball.rect.left = my_ball.rect.left - 10
 
+        elif event.type == pygame.MOUSEMOTION:
+            my_ball.rect.center = event.pos
+
+
     clock.tick(30)
     screen.blit(background, (0, 0))
     my_ball.move()
