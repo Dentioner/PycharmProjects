@@ -1,7 +1,7 @@
 # coding: utf-8
 import pygame, sys
 pygame.init()
-
+down = False
 screen = pygame.display.set_mode([640, 480])
 background = pygame.Surface(screen.get_size())
 background.fill([255, 255, 255])
@@ -55,8 +55,14 @@ while True:
             elif event.key == pygame.K_LEFT:
                 my_ball.rect.left = my_ball.rect.left - 10
 
+        elif event.type == pygame.MOUSEBUTTONDOWN:
+            down = True
+        elif event.type == pygame.MOUSEBUTTONUP:
+            down = False
+
         elif event.type == pygame.MOUSEMOTION:
-            my_ball.rect.center = event.pos
+            if down:
+                my_ball.rect.center = event.pos
 
 
     clock.tick(30)
