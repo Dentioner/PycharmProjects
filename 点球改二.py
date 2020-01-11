@@ -6,7 +6,9 @@ def ball():
     print('你的回合')
     print('选哪一边')
     print('left,right,or center?')
-    you = raw_input()
+    #you = raw_input()
+    you = input()
+
     com = choice(direction)
     print('你选择了%s')%you
     print('对方选择了%s')%com
@@ -19,7 +21,8 @@ def ball():
     print('对方回合')
     print('选哪一边')
     print('left,right,or center?')
-    you = raw_input()
+    #you = raw_input()
+    you = input()
     com = choice(direction)
     print('你选择了%s')%you
     print('对方选择了%s')%com
